@@ -28,7 +28,7 @@ _anmol098_ spent a non-trivial amount of effort building and designing his itera
 
 The final output might look something like this:
 
-![image](demo.png)
+![image](https://github.com/ebdonato/npx_card/blob/master/demo.png)
 
 <hr/>
 
