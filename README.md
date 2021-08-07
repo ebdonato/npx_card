@@ -20,9 +20,9 @@ And get to know me in some kind of an unique style.
 
 ## Thanks [Anmol Pratap Singh (anmol098)](https://github.com/anmol098)
 
-_anmol098_ spent a non-trivial amount of effort building and designing his iteration of [npx card](https://github.com/anmol098/npx_card), and he is proud of it! All he asks of you all is to put a **star** ⭐ on this [project](https://github.com/anmol098/npx_card) and not claim this effort as your own ♥.
+_anmol098_ spent a non-trivial amount of effort building and designing his iteration of [npx card](https://github.com/anmol098/npx_card), and he is proud of it! All he asks of you all is to put a **star** ⭐ on his [project](https://github.com/anmol098/npx_card) and not claim this effort as your own ♥.
 
-**I forked npx business card my from his**
+**I forked my npx business card my from his.**
 
 ## SCREENSHOT
 

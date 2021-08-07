@@ -26,7 +26,7 @@ const questions = [
                 },
             },
             {
-                name: `Send me an ${chalk.green.bold("email")}?`,
+                name: `Send me an ${chalk.green.bold("e-mail")}`,
                 value: () => {
                     open("mailto:eduardo.donato@gmail.com")
                     console.log("Done, see you soon at inbox.\n")
