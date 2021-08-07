@@ -1,14 +1,13 @@
 {
     "name": "ebdonato",
-    "version": "5.0.0",
+    "version": "5.0.1",
     "description": "A personal card for Eduardo Donato (ebdonato)",
     "main": "card.js",
     "bin": {
         "ebdonato": "./card.js"
     },
     "scripts": {
-        "test": "node card.js",
-        "publish": "npm version major & npm publish"
+        "test": "node card.js"
     },
     "repository": {
         "type": "git",
