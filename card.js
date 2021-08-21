@@ -8,6 +8,14 @@ const inquirer = require("inquirer")
 const clear = require("clear")
 const open = require("open")
 const qrCode = require("qrcode-terminal")
+const fs = require("fs")
+const request = require("request")
+const path = require("path")
+const ora = require("ora")
+const cliSpinners = require("cli-spinners")
+
+const MY_CV_URL = "https://github.com/ebdonato/cv/raw/main/cv-eduardo-donato.pdf"
+const MY_CV_FILE_NAME = "cv-eduardo-donato.pdf"
 
 clear()
 
@@ -23,6 +31,25 @@ const questions = [
                 name: "Just quit.",
                 value: () => {
                     console.log("Hasta la vista.\n")
+                },
+            },
+            {
+                name: `Download my ${chalk.magentaBright.bold("Curriculum Vitae")}?`,
+                value: () => {
+                    // cliSpinners.dots;
+                    const loader = ora({
+                        text: " Downloading Curriculum Vitae",
+                        spinner: cliSpinners.material,
+                    }).start()
+
+                    let pipe = request(MY_CV_URL).pipe(fs.createWriteStream(`./${MY_CV_FILE_NAME}`))
+
+                    pipe.on("finish", function () {
+                        let downloadPath = path.join(process.cwd(), MY_CV_FILE_NAME)
+                        console.log(`\nCurriculum Vitae Downloaded at ${downloadPath} \n`)
+                        open(downloadPath)
+                        loader.stop()
+                    })
                 },
             },
             {

@@ -1,13 +1,14 @@
 {
     "name": "ebdonato",
-    "version": "5.0.2",
+    "version": "5.1.0",
     "description": "A personal card for Eduardo Donato (ebdonato)",
     "main": "card.js",
     "bin": {
         "ebdonato": "./card.js"
     },
     "scripts": {
-        "test": "node card.js"
+        "test": "node card.js",
+        "pub": "npm publish"
     },
     "repository": {
         "type": "git",
@@ -32,9 +33,12 @@
         "boxen": "^5.0.1",
         "chalk": "^4.1.2",
         "clear": "^0.1.0",
+        "cli-spinners": "^2.6.0",
         "inquirer": "^8.1.2",
         "open": "^8.2.1",
-        "qrcode-terminal": "^0.12.0"
+        "ora": "^5.4.1",
+        "qrcode-terminal": "^0.12.0",
+        "request": "^2.88.2"
     },
     "devDependencies": {
         "eslint": "^7.32.0",
