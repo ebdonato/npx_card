@@ -66,11 +66,13 @@ const questions = [
 const data = {
     name: chalk.bold.green("              Eduardo Batista Donato"),
     handle: chalk.white("@ebdonato"),
-    work: `${chalk.white("              Software Developer at")} ${chalk.hex("#2b82b2").bold("Eletromarquez")}`,
+    work: `${chalk.white("              Full Stack Developer | Software Engineer at")} ${chalk
+        .hex("#2b82b2")
+        .bold("Dock")}`,
     twitter: chalk.gray("https://twitter.com/") + chalk.cyan("ebdonato"),
     github: chalk.gray("https://github.com/") + chalk.green("ebdonato"),
     linkedIn: chalk.gray("https://linkedin.com/in/") + chalk.blue("ebdonato"),
-    web: chalk.gray("https://gravatar.com/") + chalk.redBright("ebdonato"),
+    web: chalk.gray("https://dev.page/") + chalk.redBright("ebdonato"),
     npx: chalk.red("npx") + " " + chalk.white("ebdonato"),
 
     labelTwitter: chalk.white.bold("    Twitter:"),
@@ -80,7 +82,7 @@ const data = {
     labelCard: chalk.white.bold("       Card:"),
 }
 
-qrCode.generate("https://github.com/ebdonato", {small: true}, function (code) {
+qrCode.generate("https://dev.page/ebdonato", {small: true}, function (code) {
     const arr = code.split("\n")
 
     let i = 0
@@ -98,9 +100,9 @@ qrCode.generate("https://github.com/ebdonato", {small: true}, function (code) {
             `${arr[i++]} ${data.labelCard}  ${data.npx}`,
             `${arr[i++]}`,
             `${arr[i++]}     ${chalk.italic("I am an electrical and planning engineer.")}`,
-            `${arr[i++]}     ${chalk.italic("I am currently a Microsoft Power Platform designer,")}`,
-            `${arr[i++]}     ${chalk.italic("(Power BI, Power Apps e Power Automate),")}`,
-            `${arr[i++]}     ${chalk.italic("and modern web full-stack developer (VueJS e ExpressJS).")}`,
+            `${arr[i++]}     ${chalk.italic("I am currently a full stack developer (Vue.js e Node.js)")}`,
+            `${arr[i++]}     ${chalk.italic("and Microsoft Power Platform developer")}`,
+            `${arr[i++]}     ${chalk.italic("(Power BI, Power Apps and Power Automate).")}`,
         ].join("\n"),
         {
             margin: 1,
