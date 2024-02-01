@@ -4,7 +4,7 @@
     "description": "A personal card for Eduardo Donato (ebdonato)",
     "main": "card.js",
     "bin": {
-        "ebdonato": "./card.js"
+        "ebdonato": "card.js"
     },
     "scripts": {
         "test": "node card.js",
