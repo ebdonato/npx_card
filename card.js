@@ -72,7 +72,7 @@ const data = {
     twitter: chalk.gray("https://twitter.com/") + chalk.cyan("ebdonato"),
     github: chalk.gray("https://github.com/") + chalk.green("ebdonato"),
     linkedIn: chalk.gray("https://linkedin.com/in/") + chalk.blue("ebdonato"),
-    web: chalk.gray("https://dev.page/") + chalk.redBright("ebdonato"),
+    web: chalk.gray("https://navto.me/") + chalk.redBright("ebdonato"),
     npx: chalk.red("npx") + " " + chalk.white("ebdonato"),
 
     labelTwitter: chalk.white.bold("    Twitter:"),
@@ -82,7 +82,7 @@ const data = {
     labelCard: chalk.white.bold("       Card:"),
 }
 
-qrCode.generate("https://dev.page/ebdonato", {small: true}, function (code) {
+qrCode.generate("https://navto.me/ebdonato", {small: true}, function (code) {
     const arr = code.split("\n")
 
     let i = 0
